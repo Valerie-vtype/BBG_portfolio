@@ -28,8 +28,6 @@ function CloseSearch () {
     searchIcon.style.display=("block");
 }
 
-
-
 // hamburger icon to pop up nav menu
 
 //get hamburger icon
@@ -65,78 +63,6 @@ function OpenNavMenu () {
 
 //     for (const i = 0; i < navLink.length; i++)
 //     navLink[i].classList.add("shown");  
-}
-
-
-// BENEFITS: OPEN STIGMA SUB
-// get more stigma button and stigma extra-subsection
-
-const stigmaButton = document.getElementById("more-stigma-button");
-
-const stigmaExtra = document.getElementById("stigma");
-
-console.log("Stigma button", stigmaButton);
-
-console.log("Stigma extra section", stigmaExtra);
-
-// add event listener to stigma button 
-
-stigmaButton.addEventListener('click', stigmaOpen);
-
-// function to toggle display of link and sub-section
-
-function stigmaOpen () {
-    stigmaButton.style.display=("none");
-    stigmaExtra.style.display=("block");
-    console.log("stigma open button pressed");
-}
-
-// BENEFITS: CLOSE STIGMA SUB
-
-const hideStigmaButton = document.getElementById("less-stigma-button");
-
-console.log(hideStigmaButton);
-
-hideStigmaButton.addEventListener('click', stigmaClose);
-
-function stigmaClose () {
-    stigmaButton.style.display=("block");
-    stigmaExtra.style.display=("none");
-    console.log("stigma close button pressed");
-}
-
-// BENEFITS: OPEN attitude SUB
-// get more stigma button and stigma extra-subsection
-
-const attitudeButton = document.getElementById("more-attitude-button");
-
-const attitudeExtra = document.getElementById("attitude");
-
-console.log(attitudeButton);
-
-console.log(attitudeExtra);
-
-attitudeButton.addEventListener('click', attitudeOpen);
-
-
-function attitudeOpen () {
-    attitudeButton.style.display=("none");
-    attitudeExtra.style.display=("block");
-    console.log("open attitude button pressed");
-}
-
-// BENEFITS: CLOSE attitude SUB
-
-const hideAttitudeButton = document.getElementById("less-attitude-button");
-
-console.log(hideAttitudeButton);
-
-hideAttitudeButton.addEventListener('click', attitudeClose);
-
-function attitudeClose () {
-    attitudeButton.style.display=("block");
-    attitudeExtra.style.display=("none");
-    console.log("hide attitude button pressed");
 }
 
 
@@ -242,73 +168,3 @@ function povertyClose () {
     povertyExtra.style.display=("none");
     console.log("poverty close button pressed");
 }
-
-// Publications filter :: display: block on classes by default ::
-
-// get all buttons 
-
-const benefitsPubButton = document.getElementById("benefits-button");
-const disabilityPubButton = document.getElementById("disability-button");
-const SocialSciencePubButton = document.getElementById("social-science-button");
-const ShowAllPubButton = document.getElementById("show-all-button");
-
-console.log("filter benefits button", benefitsPubButton);
-console.log("filter disability button", disabilityPubButton);
-console.log("filter SocSci button", SocialSciencePubButton);
-console.log("Show all pubs button", ShowAllPubButton);
-
-
-// get all classes for filters 
-
-
-
-const benefitsPub = document.getElementsByClassName("publication.benefits");
-
-const disabilityPub = document.getElementsByClassName("publication.disability");
-
-const socialSciencePub = document.getElementsByClassName("publication.social-science");
-
-const otherPub = document.getElementsByClassName("publication.other");
-
-
-
-// event listener "click" on all buttons
-
-benefitsPubButton.addEventListener('click', FilterBenefits);
-
-disabilityPubButton.addEventListener('click', FilterDisability);
-
-SocialSciencePubButton.addEventListener('click', FilterSocialScience);
-
-ShowAllPubButton.addEventListener('click', ShowAll);
-
-
-// BENEFITS FILTER if benefits button = click => visability for publication.benefits = display:block // else visibility for publication =  toggle display:none
-
-function FilterBenefits() {
-    console.log("filtering by benefits")
-    otherPub.style.display=("none");
-    disabilityPub.style.display=("none");
-    socialSciencePub.style.display=("none");
-    disabilityPub.style.display=("none");
-}
-
-// DISABILITY FILTER
-
-function FilterDisability() {
-
-}
-
-// SOC SCI FILTER
-
-function FilterSocialScience() {
-
-}
-
-// SOC SCI FILTER -- REFRESH PAGE?
-
-function ShowAll() {
-    window.location.reload();
-}
-
-
