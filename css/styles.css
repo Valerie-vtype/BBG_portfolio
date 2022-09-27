@@ -286,8 +286,7 @@ a.nav-link.shown:hover {
 
 
 .date {
-    /* color: #e63946; */
-    /* font-size: .75em; */
+
     text-align: right;
 }
 
@@ -548,7 +547,7 @@ button.filter-button:hover {
     
   }
 
-}
+
 
 
 
@@ -580,6 +579,8 @@ footer {
     padding: 0px;
     text-decoration: none;
     text-align: center;
+}
+
 }
 
 
