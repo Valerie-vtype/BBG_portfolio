@@ -63,7 +63,7 @@ function OpenNavMenu() {
   //     navLink[i].classList.add("shown");
 }
 
-// Publications filter :: display: block on classes by default ::
+// Publications filter :: display: grid on classes by default ::
 
 // get all buttons
 
@@ -101,7 +101,7 @@ SocialSciencePubButton.addEventListener('click', FilterSocialScience);
 
 ShowAllPubButton.addEventListener('click', ShowAll);
 
-// BENEFITS FILTER if benefits button = click => visability for publication.benefits = display:block // else visibility for publication =  toggle display:none
+// BENEFITS FILTER if benefits button = click => visability for publication.benefits = display:grid // else visibility for publication =  toggle display:none
 
 function FilterBenefits() {
   for (let i = 0; i < otherPub.length; i++) {
@@ -119,7 +119,7 @@ function FilterBenefits() {
   }
   for (let i = 0; i < benefitsPub.length; i++) {
     console.log('benefitsPub[i]', benefitsPub[i]);
-    benefitsPub[i].style.display = 'block';
+    benefitsPub[i].style.display = 'grid';
   }
 }
 
@@ -143,7 +143,7 @@ function FilterDisability() {
       }
 
       for (let i = 0; i < disabilityPub.length; i++) {
-        disabilityPub[i].style.display = 'block';
+        disabilityPub[i].style.display = 'grid';
       }
     }
 
@@ -168,7 +168,7 @@ function FilterSocialScience() {
       }
 
       for (let i = 0; i < socialSciencePub.length; i++) {
-        socialSciencePub[i].style.display = 'block';
+        socialSciencePub[i].style.display = 'grid';
       }
     }
 

@@ -391,7 +391,7 @@ button.filter-button:hover {
 }
 
 .benefits .disability .social-science .other {
-    display: block;
+    display: grid;
 }
    
 /* about page styles */
