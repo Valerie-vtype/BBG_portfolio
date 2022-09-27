@@ -195,15 +195,17 @@ strong {
 
 }
 
+
 .search-pop-up-open {
     position: absolute;
     z-index: 20;
     opacity: 1;
     transition: 0.4s ease-in-out;
     right:10px;
-    /* bottom: 0;
     left: 0;
     right: 0;
+    /* bottom: 0;
+
     top: 0; */
 
     background-color: #f8f9fa;
@@ -244,6 +246,9 @@ a.nav-link.shown {
     border-width: 0px;
     border-top: 1px solid #a8dadc;
     background-color: white;
+    width: 100vw;
+    display:table-cell;
+    text-align: center;
 } /* stacked nav links */ 
 
 a.nav-link.shown:hover {
@@ -254,6 +259,7 @@ a.nav-link.shown:hover {
 } 
    
 .current {
+       text-decoration: none;
        font-weight: bold;
        padding-bottom: 0pt;
    }
@@ -400,6 +406,10 @@ button.filter-button:hover {
     flex-direction: column;
 }
 
+.profile-image {
+    display: none;
+}
+
 
 
 
@@ -519,6 +529,29 @@ button.filter-button:hover {
 
 }
 
+.intro-container.profile {
+    grid-column-start: 1;
+}
+
+.profile-image {
+    background-image: url("../img/BenOnHoliday.jpg");
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 160px;
+    padding: 0px;
+    margin: 15px 0px 0px 0px; 
+    
+  }
+
+}
+
+
+
 .subsection {
     width: 80vw;
     max-width: 856px;
@@ -549,9 +582,6 @@ footer {
     text-align: center;
 }
 
-
-
-}
 
 @media screen and (min-width: 980px){
 

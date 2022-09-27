@@ -58,12 +58,11 @@ menuIcon.addEventListener("click",OpenNavMenu);
 
 // function
 
-function OpenNavMenu () {
-    console.log("menu icon pressed")
+function OpenNavMenu() {
+    console.log('menu icon pressed');
     navList.classList.add("shown");
-    menuIcon.style.display=("none");
-
-//     for (const i = 0; i < navLink.length; i++)
-//     navLink[i].classList.add("shown");  
-}
-
+    for (let i = 0; i < navLink.length; i++) {
+      console.log('navList[i]', navLink[i]);
+      navLink[i].classList.add("shown");
+    }
+  }
