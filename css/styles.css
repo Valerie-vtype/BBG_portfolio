@@ -379,13 +379,16 @@ button.toggle-link {
     display: flex;
     flex-direction: column;
     border-top: 1px solid #e63946;
-    padding-bottom: 10px;
+    padding: 20px 0px;
+    /* background-color: #f8f9fa; */
 }  
 
 .filter-button {
     border-width: 0px;
     border-top: 1px solid #a8dadc;
     background-color: white;
+    line-height: 17px;
+    padding: 10px 0px;
 }
 
 button.filter-button:hover {
@@ -464,6 +467,12 @@ footer {
     display:none;
    }
 
+   .intro-text {
+    padding: 5pt 5px;
+   
+} /* page intro text */
+
+
    .latest, .publication {
     display: grid;
     grid-auto-flow: column;
@@ -484,7 +493,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 5px;
     border-top: 1px solid #e63946;
-    padding: 5px 0px;
+    padding: 20px 0px;
     margin-bottom: 10px;
 
 }  
